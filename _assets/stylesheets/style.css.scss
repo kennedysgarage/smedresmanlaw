@@ -23,6 +23,9 @@ html, body{
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
+section{
+  padding: 80px 0;
+}
 /* ========================================================= Header ===*/
 /* ------
 -- Nav --
@@ -68,7 +71,7 @@ nav{
   img{
     display: block;
     margin: 0 auto;
-    padding: 250px 0;
+    padding: 150px 0;
   }
 }
 .intro{
@@ -76,34 +79,136 @@ nav{
   h2{
     color: #fff;
   }
+  .btn{
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+  }
 }
 .profile{
   background-color: #fff;
 }
 .areas{
   background-color: #968865;
+  a{
+    border-radius: 3px;
+    display: block;
+    margin: 0 0 30px;
+    padding: 10px;
+    min-height: 256px;
+    img{
+      display: block;
+      margin: 0 auto;
+    }
+    h3{
+      margin: 15px 0 0;
+    }
+    &:hover{
+      background-color: rgba(255,255,255,0.2);
+    }
+  }
 }
 .verdicts{
-
+  .btn{
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+  }
 }
 /* ========================================================= Form ===*/
+form{
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li{
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .btn{
+    float: right;
+  }
+}
+input, textarea{
+  border: none;
+  border-radius: 3px;
+  margin: 0 0 10px;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+}
+input{
+
+}
+textarea{
+  min-height: 150px;
+}
 .btn{
-  padding: 5px 10px;
+  border-radius: 3px;
+  color: #252429;
+  display: inline-block;
+  font-family: 'Gotham Bold', sans-serif;
+  font-size: 16px;
+  padding: 15px 30px 13px;
   text-align: center;
 }
-.btn-nanked{
+.btn-default{
+  background-color: #1FBC9A;
+  color: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  &:hover{
+    color: #fff;
+  }
+}
+.btn-naked{
   border: 1px solid #252429;
-  border-radius: 3px;
+  &:hover{
+    color: #373737;
+    background-color: rgba(255,255,255,0.5);
+  }
 }
 /* ========================================================= Footer ===*/
 footer{
   .contact{
     background-color: #252429;
+    h2{
+      color: #fff;
+    }
+    ul{
+      list-style: none;
+      margin: 40px 0 0;
+      padding: 0;
+      li{
+        margin: 0;
+        padding: 0;
+        span{
+          color: #575757;
+          display: inline-block;
+          width: 100px;
+          vertical-align: top;
+        }
+        strong{
+          color: #A1A1A1;
+          display: inline-block;
+          a{
+            color: #A1A1A1;
+          }
+        }
+      }
+    }
+    form{
+      ul{
+        margin: 0;
+      }
+    }
   }
   .copyright{
     background-color: #19191C;
     color: #55535E;
     height: 60px;
+    padding: 0;
     .copy{
       font-size: 12px;
       display: inline-block;
