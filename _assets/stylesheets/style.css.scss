@@ -1,4 +1,7 @@
 @import "compass";
+@import "ss-standard.css.scss";
+@import "ss-social-circle.css.scss";
+@import "ss-social-regular.css.scss";
 @import "reset.css.scss";
 @import "variables.css.scss";
 @import "fontface.css.scss";
@@ -9,6 +12,7 @@ html, body{
     background-color: #dadedf;
     background-color: #D8D8D8;
     color: #373737;
+    font-family: 'Gotham Regular', sans-serif;
     font-size: 1em;
     font-weight: 400;
     line-height: 1.45;
@@ -25,20 +29,32 @@ html, body{
 ------ */
 header{
   background-color: #252429;
+  height: 60px;
   h1{
     display: inline;
-    text-transform: uppercase;
+    font-size: 20px;
+    margin: 0;
+    a{
+      color: #fff;
+      display: inline-block;
+      padding: 18px 0;
+    }
   }
 }
 nav{
   float: right;
+  margin: 18px 0px 0;
   ul{
     li{
-      border-right: 1px solid #A6A6A6;
+      border-right: 1px solid #4f4f4f;
       float: left;
       a{
         color: #A6A6A6;
+        font-size: 14px;
         padding: 10px 5px;
+        &:hover{
+          color: #fff;
+        }
       }
       &:last-child{
         border: none;
@@ -49,9 +65,17 @@ nav{
 /* ========================================================= Home ===*/
 .welcome{
   background-color: #252429;
+  img{
+    display: block;
+    margin: 0 auto;
+    padding: 250px 0;
+  }
 }
 .intro{
   background-color: #968865;
+  h2{
+    color: #fff;
+  }
 }
 .profile{
   background-color: #fff;
@@ -62,6 +86,15 @@ nav{
 .verdicts{
 
 }
+/* ========================================================= Form ===*/
+.btn{
+  padding: 5px 10px;
+  text-align: center;
+}
+.btn-nanked{
+  border: 1px solid #252429;
+  border-radius: 3px;
+}
 /* ========================================================= Footer ===*/
 footer{
   .contact{
@@ -70,11 +103,20 @@ footer{
   .copyright{
     background-color: #19191C;
     color: #55535E;
+    height: 60px;
     .copy{
+      font-size: 12px;
       display: inline-block;
+      margin: 25px 0 0;
     }
     .disclaimer{
-
+      font-size: 12px;
+      display: inline-block;
+      float: right;
+      margin: 25px 0 0;
+      a{
+        color: #55535E;
+      }
     }
   }
 }
