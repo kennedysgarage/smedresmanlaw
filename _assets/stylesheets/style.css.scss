@@ -7,6 +7,7 @@
 /* ========================================================= Main ===*/
 html, body{
     background-color: #dadedf;
+    background-color: #D8D8D8;
     color: #373737;
     font-size: 1em;
     font-weight: 400;
@@ -22,18 +23,60 @@ html, body{
 /* ------
 -- Nav --
 ------ */
+header{
+  background-color: #252429;
+  h1{
+    display: inline;
+    text-transform: uppercase;
+  }
+}
 nav{
+  float: right;
   ul{
     li{
+      border-right: 1px solid #A6A6A6;
+      float: left;
       a{
-
+        color: #A6A6A6;
+        padding: 10px 5px;
+      }
+      &:last-child{
+        border: none;
       }
     }
   }
 }
+/* ========================================================= Home ===*/
+.welcome{
+  background-color: #252429;
+}
+.intro{
+  background-color: #968865;
+}
+.profile{
+  background-color: #fff;
+}
+.areas{
+  background-color: #968865;
+}
+.verdicts{
+
+}
 /* ========================================================= Footer ===*/
 footer{
+  .contact{
+    background-color: #252429;
+  }
+  .copyright{
+    background-color: #19191C;
+    color: #55535E;
+    .copy{
+      display: inline-block;
+    }
+    .disclaimer{
 
+    }
+  }
 }
 /* ========================================================= Respond ===*/
 @media all and (min-width: 41em){
