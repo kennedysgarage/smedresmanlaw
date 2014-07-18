@@ -67,7 +67,10 @@ nav{
 }
 /* ========================================================= Home ===*/
 .welcome{
-  background-color: #252429;
+  background-color: #1f1c1e;
+  background-image: url(asset_path('home/hero.jpg'));
+  background-position: center center;
+  background-repeat: no-repeat;
   img{
     display: block;
     margin: 0 auto;
@@ -87,6 +90,17 @@ nav{
 }
 .profile{
   background-color: #fff;
+  padding: 0;
+  max-height: 500px;
+  img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+  .row{
+    padding: 80px 0;
+  }
 }
 .areas{
   background-color: #968865;
@@ -184,7 +198,7 @@ footer{
         margin: 0;
         padding: 0;
         span{
-          color: #575757;
+          color: #777;
           display: inline-block;
           width: 100px;
           vertical-align: top;
