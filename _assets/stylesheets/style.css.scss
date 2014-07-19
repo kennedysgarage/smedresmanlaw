@@ -9,8 +9,7 @@
 @import "grid.css.scss";
 /* ========================================================= Main ===*/
 html, body{
-    background-color: #dadedf;
-    background-color: #D8D8D8;
+    background-color: #968865;
     color: #373737;
     font-family: 'Gotham Regular', sans-serif;
     font-size: 1em;
@@ -49,18 +48,14 @@ nav{
   margin: 18px 0px 0;
   ul{
     li{
-      border-right: 1px solid #4f4f4f;
       float: left;
       a{
         color: #A6A6A6;
         font-size: 14px;
-        padding: 10px 5px;
+        padding: 10px 15px;
         &:hover{
           color: #fff;
         }
-      }
-      &:last-child{
-        border: none;
       }
     }
   }
@@ -123,6 +118,7 @@ nav{
   }
 }
 .verdicts{
+  background-color: #dadedf;
   .btn{
     display: block;
     margin: 0 auto;
