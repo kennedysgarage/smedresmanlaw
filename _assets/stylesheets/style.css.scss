@@ -61,6 +61,9 @@ nav{
   }
 }
 /* ========================================================= Home ===*/
+/* ----------
+-- Welcome --
+---------- */
 .welcome{
   background-color: #1f1c1e;
   background-image: url(asset_path('home/hero.jpg'));
@@ -72,6 +75,9 @@ nav{
     padding: 150px 0;
   }
 }
+/* --------
+-- Intro --
+-------- */
 .intro{
   background-color: #968865;
   h2{
@@ -84,10 +90,16 @@ nav{
     width: 150px;
   }
 }
+/* ----------
+-- Profile --
+---------- */
 .profile{
   background-color: #fff;
   padding: 0;
   max-height: 500px;
+  h2{
+    color: #25272B;
+  }
   img{
     position: absolute;
     top: 0;
@@ -98,6 +110,9 @@ nav{
     padding: 80px 0;
   }
 }
+/* --------
+-- Areas --
+-------- */
 .areas{
   background-color: #968865;
   img{
@@ -114,12 +129,28 @@ nav{
     width: 200px;
   }
 }
+/* -----------
+-- Verdicts --
+----------- */
 .verdicts{
   background-color: #dadedf;
+  h2{
+    color: #25272B;
+  }
   .btn{
     display: block;
     margin: 0 auto;
     width: 150px;
+  }
+  h4{
+    font-family: 'Gotham Book', sans-serif;
+    font-size: 40px;
+  }
+}
+/* ========================================================= Attorney ===*/
+.attorney{
+  h3{
+    text-align: center;
   }
 }
 /* ========================================================= Practice Areas ===*/
@@ -209,7 +240,6 @@ footer{
   .contact{
     background-color: #252429;
     h2{
-      color: #fff;
       margin: 0 0 .5em;
     }
     ul{
