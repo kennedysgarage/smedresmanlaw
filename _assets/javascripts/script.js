@@ -6,4 +6,10 @@ $(document).ready(function(){
     return false;
   });
 
+  // Navigation for mobile
+	$('.menu').click(function(e){
+		e.preventDefault();
+		$('nav').slideToggle();
+	});
+
 });
