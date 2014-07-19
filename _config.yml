@@ -1,8 +1,7 @@
 name: "SmedresmanLaw"
 permalink: pretty
 author: Theron Studios
-email: hello@theronstudios.com
-url: http://theronstudios.com
+url: http://smedresmanlaw.com.s107775.gridserver.com/
 
 exclude: ["CNAME","editorconfig.txt","Gemfile","Gemfile.lock","README.md", "RAKEFILE"]
 
