@@ -107,7 +107,7 @@ nav{
 .profile{
   background-color: #fff;
   padding: 0;
-  min-height: 500px;
+  min-height: inherit;
   overflow: hidden;
   h2{
     color: #25272B;
@@ -117,7 +117,7 @@ nav{
     top: 0;
     left: 0;
     bottom: 0;
-    opacity: 0.3
+    opacity: 0;
   }
   .row{
     padding: 57px 0;
@@ -300,7 +300,6 @@ footer{
     .disclaimer{
       font-size: 12px;
       display: inline-block;
-      float: right;
       margin: 12px 0 0;
       a{
         color: #55535E;
@@ -366,9 +365,13 @@ footer{
     }
   }
   .profile{
+    min-height: 500px;
     img{
       opacity: 1;
     }
+  }
+  .disclaimer{
+    float: right;
   }
 }
 @media all and (min-width: 960px){
