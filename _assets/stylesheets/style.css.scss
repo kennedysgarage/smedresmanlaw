@@ -2,9 +2,9 @@
 @import "ss-standard.css.scss";
 @import "ss-social-circle.css.scss";
 @import "ss-social-regular.css.scss";
-@import "reset.css.scss";
-@import "variables.css.scss";
 @import "fontface.css.scss";
+@import "variables.css.scss";
+@import "reset.css.scss";
 @import "typography.css.scss";
 @import "grid.css.scss";
 /* ========================================================= Main ===*/
@@ -196,7 +196,7 @@ form{
     float: right;
   }
 }
-input, textarea{
+input[type=text], input[type=email], textarea{
   border: none;
   border-radius: 3px;
   margin: 0 0 10px;
@@ -204,8 +204,8 @@ input, textarea{
   padding: 10px;
   width: 100%;
 }
-input{
-
+input[type=submit]{
+  border: none;
 }
 textarea{
   min-height: 150px;
@@ -218,6 +218,7 @@ textarea{
   font-size: 16px;
   padding: 15px 30px 13px;
   text-align: center;
+  @include easein(.25s);
 }
 .btn-default{
   background-color: #1FBC9A;
@@ -225,6 +226,7 @@ textarea{
   padding: 10px 30px;
   text-transform: uppercase;
   &:hover{
+    background-color: #24deb5;
     color: #fff;
   }
 }

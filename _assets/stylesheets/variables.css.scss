@@ -8,3 +8,12 @@ $oil: #252429;
 /* -------------
 -- Typography --
 ------------- */
+
+/* ========================================================= Mixins ===*/
+@mixin easein($seconds) {
+  -webkit-transition: color $seconds ease-in, background $seconds ease-in, opacity $seconds ease-in;
+  -moz-transition: color $seconds ease-in, background $seconds ease-in, opacity $seconds ease-in;
+  -ms-transition: color $seconds ease-in, background $seconds ease-in, opacity $seconds ease-in;
+  -o-transition: color $seconds ease-in, background $seconds ease-in, opacity $seconds ease-in;
+  transition: color $seconds ease-in, background $seconds ease-in, opacity $seconds ease-in;
+}

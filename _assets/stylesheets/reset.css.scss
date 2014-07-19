@@ -21,11 +21,7 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
 a {
 	color: #1FBC9A;
 	text-decoration: none;
-	-webkit-transition: color .25s ease-in, background .25s ease-in, opacity .25s ease-in;
-	-moz-transition: color .25s ease-in, background .25s ease-in, opacity .25s ease-in;
-	-ms-transition: color .25s ease-in, background .25s ease-in, opacity .25s ease-in;
-	-o-transition: color .25s ease-in, background .25s ease-in, opacity .25s ease-in;
-	transition: color .25s ease-in, background .25s ease-in, opacity .25s ease-in;
+	@include easein(.25s);
 }
 a:hover { color: #1ba88a; }
 a:focus { outline: thin dotted; }
