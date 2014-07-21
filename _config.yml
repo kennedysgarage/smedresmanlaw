@@ -13,5 +13,6 @@ assets:
     - _assets/images
     - _assets/javascripts
     - _assets/stylesheets
+    - _assets/pdf
   js_compressor: uglifier
   css_compressor: sass
