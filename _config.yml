@@ -1,23 +1,35 @@
-name: "SmedresmanLaw"
-permalink: pretty
+name: "Smedresman Law"
 author: Theron Studios
+email:
 url: http://smedresmanlaw.com/
+title:
+description:
+permalink: pretty
+markdown: kramdown
+highlighter: rouge
+
+include: ['_pages']
+
+exclude:
+  - CNAME
+  - editorconfig.txt
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - RAKEFILE
 
 gems:
   - jekyll-assets
   - uglifier
   - sass
 
-exclude: ["CNAME","editorconfig.txt","Gemfile","Gemfile.lock","README.md", "RAKEFILE"]
-
 assets:
   dirname: assets
   baseurl: /assets/
-  sources:
-    - _assets/fonts
-    - _assets/images
-    - _assets/javascripts
-    - _assets/stylesheets
-    - _assets/pdf
-  js_compressor: uglifier
-  css_compressor: sass
+  cache: false
+
+sources:
+  - _assets/fonts
+  - _assets/images
+  - _assets/javascripts
+  - _assets/stylesheets
