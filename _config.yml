@@ -1,7 +1,12 @@
 name: "SmedresmanLaw"
 permalink: pretty
 author: Theron Studios
-url: http://smedresmanlaw.com.s107775.gridserver.com/
+url: http://smedresmanlaw.com/
+
+gems:
+  - jekyll-assets
+  - uglifier
+  - sass
 
 exclude: ["CNAME","editorconfig.txt","Gemfile","Gemfile.lock","README.md", "RAKEFILE"]
 
